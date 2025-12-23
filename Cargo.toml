@@ -28,11 +28,12 @@ cosmwasm_2_2 = ["cosmwasm_2_1", "cosmwasm-std/cosmwasm_2_2"]
 cosmwasm_3_0 = ["cosmwasm_2_2", "cosmwasm-std/cosmwasm_3_0"]
 
 [dependencies]
+cosmwasm-schema                = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp", package = "cosmwasm-schema" }
+cw-storage-plus              = { git = "https://github.com/permissionlessweb/cw-storage-plus", branch = "mvp" }
+cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp" }
+cw-utils                     = { git = "https://github.com/permissionlessweb/cw-minus", branch = "mvp", package = "cw-utils" }
+
 bech32 = "0.11.0"
-cosmwasm-schema = "3.0.1"
-cosmwasm-std = "3.0.1"
-cw-storage-plus = "3.0.0"
-cw-utils = "3.0.0"
 itertools = "0.14.0"
 prost = "0.14.1"
 schemars = "0.8.22"
