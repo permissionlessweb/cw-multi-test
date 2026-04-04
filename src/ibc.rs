@@ -9,6 +9,9 @@ pub type IbcAcceptingModule = AcceptingModule<IbcMsg, IbcQuery, Empty>;
 
 impl Ibc for IbcAcceptingModule {}
 
+/// Alias for backward compatibility with cw-multi-test-fork.
+pub type IbcSimpleModule = IbcAcceptingModule;
+
 /// implementation of the always failing IBC module.
 pub type IbcFailingModule = FailingModule<IbcMsg, IbcQuery, Empty>;
 

@@ -200,7 +200,7 @@ pub use crate::featured::staking::{
     Distribution, DistributionKeeper, StakeKeeper, Staking, StakingInfo, StakingSudo,
 };
 pub use crate::gov::{Gov, GovAcceptingModule, GovFailingModule};
-pub use crate::ibc::{Ibc, IbcAcceptingModule, IbcFailingModule};
+pub use crate::ibc::{Ibc, IbcAcceptingModule, IbcFailingModule, IbcSimpleModule};
 pub use crate::module::{AcceptingModule, FailingModule, Module};
 pub use crate::stargate::{Stargate, StargateAccepting, StargateFailing};
 pub use crate::wasm::{ContractData, Wasm, WasmKeeper, WasmSudo};
