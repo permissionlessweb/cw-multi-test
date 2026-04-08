@@ -28,10 +28,10 @@ cosmwasm_2_2 = ["cosmwasm_2_1", "cosmwasm-std/cosmwasm_2_2"]
 cosmwasm_3_0 = ["cosmwasm_2_2", "cosmwasm-std/cosmwasm_3_0"]
 
 [dependencies]
-cosmwasm-schema                = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp", package = "cosmwasm-schema" }
-cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "mvp" }
-cw-storage-plus              = { git = "https://github.com/permissionlessweb/cw-storage-plus", branch = "mvp" }
-cw-utils                     = { git = "https://github.com/permissionlessweb/cw-minus", branch = "mvp", package = "cw-utils" }
+cosmwasm-schema = { package = "cosmwasm-schema", path = "../ZK/cw/zk-cosmwasm/packages/schema" }
+cosmwasm-std = { path = "../ZK/cw/zk-cosmwasm/packages/std" }
+cw-storage-plus = { path = "../ZK/cw/zk-storage-plus" }
+cw-utils = { package = "cw-utils", path = "../ZK/cw/zk-cw-minus/packages/cw-utils" }
 
 # paths for local development
 #cosmwasm-schema   = { path = "../zk-cosmwasm/mvp/packages/schema" }
