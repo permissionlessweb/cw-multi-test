@@ -3,7 +3,7 @@ name = "cw-multi-test"
 version = "3.0.1"
 authors = [
     "Ethan Frey <ethanfrey@users.noreply.github.com>",
-    "Dariusz Depta <depta@engos.de>"
+    "Dariusz Depta <depta@engos.de>",
 ]
 description = "Testing tools for multi-contract interactions"
 repository = "https://github.com/CosmWasm/cw-multi-test"
@@ -28,10 +28,10 @@ cosmwasm_2_2 = ["cosmwasm_2_1", "cosmwasm-std/cosmwasm_2_2"]
 cosmwasm_3_0 = ["cosmwasm_2_2", "cosmwasm-std/cosmwasm_3_0"]
 
 [dependencies]
-cosmwasm-schema = { package = "cosmwasm-schema", git = "https://github.com/permissionlessweb/cosmwasm", branch = "zk-mvp" }
-cosmwasm-std = { git = "https://github.com/permissionlessweb/cosmwasm", branch = "zk-mvp" }
-cw-storage-plus = { git = "https://github.com/permissionlessweb/cw-storage-plus", branch = "zk-mvp" }
-cw-utils = { package = "cw-utils", git = "https://github.com/permissionlessweb/cw-minus", branch = "zk-mvp" }
+cosmwasm-schema = { package = "cosmwasm-schema", path = "../cosmwasm/packages/schema" }
+cosmwasm-std = { path = "../cosmwasm/packages/std" }
+cw-storage-plus = { path = "../cw-storage-plus" }
+cw-utils = { package = "cw-utils", path = "../cw-minus/packages/cw-utils" }
 
 bech32 = "0.11.0"
 itertools = "0.14.0"
